@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const user = useSupabaseUser();
 
-const name = computed(() => user?.value.user_metadata.full_name);
-const profile = computed(() => user?.value.user_metadata.avatar_url);
+const name = computed(() => user.value?.user_metadata.full_name);
+const profile = computed(() => user.value?.user_metadata.avatar_url);
 </script>
 
 <template>
