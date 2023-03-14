@@ -1,3 +1,3 @@
-import useFetchWithCache from './useFetchWithCache';
+import type { CourseMeta } from '@/types/course';
 
-export default async () => useFetchWithCache('/api/course/meta');
+export default async () => useFetchWithCache<CourseMeta>('/api/course/meta');
