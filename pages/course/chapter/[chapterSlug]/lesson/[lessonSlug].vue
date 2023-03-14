@@ -1,9 +1,9 @@
 <script setup>
 import useLesson from '@/composables/useLesson';
 
-const course = await useCourse();
 const route = useRoute();
 const { chapterSlug, lessonSlug } = route.params;
+const course = await useCourse();
 const lesson = await useLesson(chapterSlug, lessonSlug);
 
 definePageMeta({
